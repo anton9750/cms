@@ -38,5 +38,12 @@ export const country = defineType({
       title: "Billede",
       type: "image",
     }),
+
+    defineField({
+      name: "translations",
+      title: "Oversættelser",
+      type: "array",
+      of: [{ type: "translation" }],
+    }),
   ],
 })

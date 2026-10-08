@@ -45,5 +45,12 @@ export const attraction = defineType({
       type: "reference",
       to: [{ type: "city" }],
     }),
+
+    defineField({
+      name: "translations",
+      title: "Oversættelser",
+      type: "array",
+      of: [{ type: "translation" }],
+    }),
   ],
 })

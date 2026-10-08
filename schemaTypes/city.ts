@@ -39,5 +39,12 @@ export const city = defineType({
       type: "reference",
       to: [{ type: "country" }],
     }),
+
+    defineField({
+      name: "translations",
+      title: "Oversættelser",
+      type: "array",
+      of: [{ type: "translation" }],
+    }),
   ],
 })
